@@ -1,0 +1,7 @@
+---- filemap_write_and_wait Matches (6 in 3 files) ----
+Direct-io.c (fs):			retval = filemap_write_and_wait(mapping);
+Filemap.c (mm):int filemap_write_and_wait(struct address_space *mapping)
+Filemap.c (mm):		status = filemap_write_and_wait(mapping);
+Filemap.c (mm):	 * for the subsequent filemap_write_and_wait().
+Filemap.c (mm):	retval = filemap_write_and_wait(mapping);
+Fs.h (include\linux):extern int filemap_write_and_wait(struct address_space *mapping);
